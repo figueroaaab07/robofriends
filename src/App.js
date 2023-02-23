@@ -13,10 +13,10 @@ function App() {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(res => res.json())
       .then(
-        (result) => {
+        (users) => {
           setIsLoaded(true);
-          setRobots(result)
-          setFilterRobots(result);
+          setRobots(users)
+          setFilterRobots(users);
         },
         (error) => {
             setIsLoaded(true);
