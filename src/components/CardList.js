@@ -6,7 +6,7 @@ const CardList = ({ robots }) => {
     return <Card key={robot.id} id={robot.id} name={robot.name} email={robot.email} />
   })
   return (
-    <div style={{overflow: 'scroll', border: '5px solid black', height: '800px'}}>
+    <div>
       {cardComponent}
     </div>
   );
